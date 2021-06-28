@@ -1,0 +1,73 @@
+import java.util.Scanner;
+public class Max
+{
+ public static void main(String args[])
+ { 
+   int a,b,c,d,m,n;
+   Scanner obj =new Scanner(System.in);
+   a=obj.nextInt();
+   b=obj.nextInt();
+   c=obj.nextInt();
+   d=obj.nextInt();
+   if (a>b)
+   m=a;
+   else
+   m=b;
+   if(c>d)
+   n=c;
+   else
+   n=d;
+   if(m>n)
+   System.out.println(m+" is greater");
+   else
+   System.out.println(n+" is greater");
+  }
+}
+
+/*program to print range of even(n to m)numbers in reverse order using while loop*/
+
+import java.util.Scanner;
+public class Even 
+{
+  public static void main(String args[])
+  {
+    int n,m;
+    Scanner obj = new Scanner(System.in);
+    n=obj.nextInt();
+    m=obj.nextInt();
+    while(m>=n)
+    {
+      if(m%2==0)
+       {
+      System.out.print(m+"  ");
+       }
+      m-=2;
+    }
+  }
+}
+
+
+/*program to print no.of even digits and odd digits for a given number n*/
+
+import java.util.Scanner;
+public class Digit
+{ 
+  public static void main(String args[])
+  {
+    int n,c,d,rem;
+    c=d=0;
+    Scanner obj = new Scanner(System.in);
+    n=obj.nextInt();
+    while(n>0)
+    {
+     rem=n%10;
+     n=n/10;
+     if (rem%2==0)
+       c+=1;
+    else
+       d+=1;
+    }
+   System.out.println("odd digits ="+d);
+   System.out.println("even digits ="+c);
+ }
+}
