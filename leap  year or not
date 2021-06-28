@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Leap
+{
+  public static void main(String args[])
+   {
+     int l;
+     Scanner sc= new Scanner(System.in);
+     l=sc.nextInt();
+     if (l%4==0 && l%100!=0 || l%400==0)
+     System.out.println("LEAP YEAR");
+     else
+     System.out.println("Not a LEAP YEAR");
+     }
+   }
