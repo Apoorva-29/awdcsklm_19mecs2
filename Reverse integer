@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Reverse {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int x,rem;
+        long rev=0;
+        Scanner sc= new Scanner(System.in);
+        x=sc.nextInt();
+        while(x!=0 && x>0 || x<0)
+        {
+            rem=x%10;
+            x=x/10;
+            rev=rev*10+rem;
+        }
+        if(rev > Integer.MAX_VALUE || rev < Integer.MIN_VALUE)
+        {
+        System.out.println (0);
+        } 
+        else
+        {
+        System.out.println ((int)rev);
+        }
+    }
+}
+********************************************OUTPUT***********************************************
+input (stdin)
+-123
+Your Output (stdout)
+-321
+Expected Output
+-321
