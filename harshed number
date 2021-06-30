@@ -1,0 +1,30 @@
+import java.util.*;
+public class Harshad
+{
+  public static void main(String args[])
+  {
+    int n,rem,num,sum=0;
+    Scanner sc= new Scanner(System.in);
+    n=sc.nextInt();
+    num=n;
+    while(n>0)
+    {
+     rem=n%10;
+     sum=sum+rem;
+     n=n/10;
+    }
+    if(num%sum==0)
+    {
+     System.out.println(num+"  is a Harshad number");
+    }
+    else
+    {
+     System.out.println(num+"  is not a Harshad number");
+    }
+  }
+}
+****************************OUTPUT****************************
+D:\ali>javac Harshad.java
+D:\ali>java Harshad
+156
+156  is a Harshad number
