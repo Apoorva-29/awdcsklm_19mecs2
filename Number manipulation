@@ -1,0 +1,27 @@
+import java.util.*;
+public class Manipulate 
+{
+  public static void main(String args[])
+ {
+        Scanner sc= new Scanner(System.in);
+	int n,rem,pro=1,sum=0,result;
+        n=sc.nextInt();
+        while(n>0)
+        {
+            rem=n%10;
+            pro=pro*rem;
+            sum=sum+rem;
+            n=n/10;
+        }
+        result=pro-sum;
+        System.out.print(result);
+    }
+}
+
+***************************OUTPUT*************************
+Your input         |     D:\ali>javac Manipulate.java
+234                |     D:\ali>java Manipulate
+Output             |     234
+15                 |     15
+Expected           |
+15                 |
