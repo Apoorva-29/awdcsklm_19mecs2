@@ -1,0 +1,39 @@
+import java.util.*;
+public class Swap
+{
+  public static void main(String args[])
+   {
+    int n,x,y,rev=0,rem,m,New=0;
+    Scanner sc= new Scanner(System.in);
+    n=sc.nextInt();
+    x=sc.nextInt();
+    y=sc.nextInt();
+    while(n>0)
+    {
+     rem=n%10;
+     if(rem==x)
+     {
+      rev=rev*10+y;
+     }
+     else
+     {
+      rev=rev*10+rem;
+     }
+     n=n/10;
+    }
+    while(rev>0)
+   {
+     m=rev%10;
+     rev=rev/10;
+     New=New*10+m;
+   }
+   System.out.println(New);
+  }
+}
+********************************OUTPUT******************************
+D:\ali>javac Swap.java
+D:\ali>java Swap
+234278
+2
+5
+534578
