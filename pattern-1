@@ -1,0 +1,27 @@
+import java.util.*;
+public class Pattern1
+{
+  public static void main(String args[])
+  {
+   int n,i,j;
+   Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+   for(i=n;i>0;i--)
+   {
+    for(j=i;j>0;j--)
+    {
+     System.out.print("*");
+    }
+   System.out.println();
+   }
+  }
+}
+******************************OUTPUT***************************
+D:\ali>javac Pattern1.java
+D:\ali>java Pattern1
+5
+*****
+****
+***
+**
+*
