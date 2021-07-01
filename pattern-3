@@ -1,0 +1,28 @@
+import java.util.*;
+public class Pattern3
+{
+ public static void main(String args[])
+ { 
+  int n,i,j,p=65;
+  Scanner sc= new Scanner(System.in);
+  n=sc.nextInt();
+		for (i=1;i<=n;i++)
+		{
+			for (j=1;j<=i;j++)
+			{
+				System.out.print((char)p);
+				p++;
+			}
+			System.out.println();
+		}
+	}
+}
+******************************OUTPUT******************************
+D:\ali>javac Pattern3.java
+D:\ali>java Pattern3
+5
+A
+BC
+DEF
+GHIJ
+KLMNO
