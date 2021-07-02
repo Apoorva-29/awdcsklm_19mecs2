@@ -1,0 +1,35 @@
+import java.util.*;
+public class Factorial
+{
+    public static void main(String args[])
+    {
+        int n,q;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        while(n>=1)
+        { 
+            int fact=1;
+            q=sc.nextInt();
+            for(int j=1;j<=q;j++)
+            {
+                fact=fact*j;
+            }
+            System.out.println(fact);
+        }
+    }
+ }
+ *****************************OUTPUT******************************
+ input                           | D:\ali>javac Factorial.java
+ 5                               | D:\ali>java Factorial
+ 1                               | 5
+ 2                               | 1
+ 3                               | 1
+ 4                               | 2
+ 5                               | 2
+ output                          | 3
+ 1                               | 6
+ 2                               | 4
+ 6                               | 24
+ 24                              | 5 
+ 120                             | 120
+ 
