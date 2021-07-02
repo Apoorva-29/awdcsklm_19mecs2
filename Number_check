@@ -1,0 +1,23 @@
+import java.util.*;
+class Numbercheck
+{
+ public static void main (String args[])
+ {
+  int n;
+  Scanner sc=new Scanner(System.in);
+  n=sc.nextInt();
+  if(n%4==0)
+  {
+   System.out.print((n+1));
+  }
+  else
+  {
+   System.out.print((n-1));
+  }
+ }
+}
+****************************OUTPUT**************************
+D:\ali>javac Numbercheck.java  | Sample Input:     
+D:\ali>java Numbercheck        | 5
+5                              | Sample Output:
+4                              | 4
