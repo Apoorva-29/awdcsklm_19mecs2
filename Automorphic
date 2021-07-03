@@ -1,0 +1,30 @@
+import java.util.*;
+public class Automorphic
+{
+ public static void main(String args[])
+ {
+   int n,pro;
+   Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+  pro=n*n;
+  if((n%10)==(pro%10))
+  {
+    System.out.print(n+"  is a Automorphic number");
+  }
+  else
+  {
+   System.out.print(n+"  is not a Automorphic number");
+  }
+ }
+}
+*****************************OUTPUT*****************************
+D:\ali>javac Automorphic.java
+D:\ali>java Automorphic
+76
+76  is a Automorphic number
+D:\ali>java Automorphic
+25
+25  is a Automorphic number
+D:\ali>java Automorphic
+7
+7  is not a Automorphic number
