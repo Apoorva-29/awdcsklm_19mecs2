@@ -1,0 +1,49 @@
+import java.util.*;
+public class Pattern4
+{
+ public static void main(String args[])
+ { 
+   int n,i,j;
+   Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+   for(i=1;i<=2*n-1;i++)
+   {
+    for(j=1;j<=i;j++)
+    {
+    if(i%2!=0)
+     System.out.print("*");  
+    else
+     System.out.print(" "); 
+    }
+    System.out.println();
+   }
+   for(i=2*n-1;i>0;i--)
+   {
+    for(j=1;j<i;j++)
+    {
+    if(i%2==0)
+     System.out.print("*");  
+    else
+     System.out.print(" "); 
+    }
+    System.out.println();
+   }
+  }
+}
+*******************************OUTPUT*******************************
+D:\ali>javac Pattern4.java
+D:\ali>java Pattern4
+4
+*
+
+***
+
+*****
+
+*******
+
+*****
+
+***
+
+*
