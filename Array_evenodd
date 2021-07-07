@@ -1,0 +1,49 @@
+import java.util.*;
+public class Arrayevenodd
+{
+public static void main(String args[])
+{
+ int n,even=0,odd=0,sum;
+ Scanner sc=new Scanner(System.in);
+ n=sc.nextInt();
+ int arr[]=new int[n];
+ for(int i=0;i<n;i++)
+ {
+  arr[i]=sc.nextInt();
+ }
+ for(int i=0;i<n;i++)
+ {
+    if(arr[i]%2==0)
+     {
+      even+=1;
+     }
+    else
+    { 
+     odd+=1;
+    }
+ }
+ System.out.println("even = "+even+",  odd = "+odd);
+ sum=even+odd;
+ if(sum%2==0)
+ {
+  System.out.print("EVEN");
+ }
+ else
+ {
+ System.out.print("ODD");
+ }
+ }
+}
+***********************************OUTPUT**********************************
+D:\ali>javac Arrayevenodd.java
+D:\ali>java Arrayevenodd
+6
+1 2 3 4 5 6
+even = 3, odd = 3
+EVEN
+D:\ali>javac Arrayevenodd.java
+D:\ali>java Arrayevenodd
+10
+1 23 25 12 85 10 47 96 4 8
+even = 5,  odd = 5
+EVEN
