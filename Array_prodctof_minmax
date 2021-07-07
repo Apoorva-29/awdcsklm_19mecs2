@@ -1,0 +1,34 @@
+
+class Solution
+{
+    public static long find_multiplication (int arr[], int brr[], int n, int m)
+    {
+        long max,min,product;
+        max=arr[0];
+        min=brr[0];
+        for(int i=1;i<n;i++)
+        {
+          if(arr[i]>max)
+         {
+           max=arr[i];
+         }
+        }
+         for(int i=1;i<n;i++)
+        {
+          if(brr[i]<min)
+         {
+           min=brr[i];
+         }
+        }
+        product=max*min;
+        return(product);
+    }
+ }
+**************************************OUTPUT**************************************
+For Input:
+6
+5 7 9 3 6 2 
+6
+1 2 6 -1 0 9
+your output is: 
+-9
