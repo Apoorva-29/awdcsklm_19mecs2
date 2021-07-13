@@ -1,0 +1,31 @@
+import java.lang.*;
+import java.util.*;
+public class Stringinsert
+ {
+   public static void main(String[] args) 
+   {
+      Scanner sc=new Scanner(System.in);
+      String str=sc.nextLine();
+      String insert =sc.next();
+      int pos=sc.nextInt();
+      String ch[]=str.split(" ");
+      for(int i=0;i<ch.length;i++)
+      {
+      StringBuffer newstring=new StringBuffer(ch[i]);
+      newstring.insert(pos-1,insert);
+      System.out.print(newstring.toString()+" "); 
+      }
+   }
+ }
+ ********************************OUTPUT*****************************
+D:\ali>javac Stringinsert.java
+D:\ali>java Stringinsert
+hello world
+hai
+3
+hehaillo wohairld
+D:\ali>java Stringinsert
+very good
+hi
+2
+vhiery ghiood
