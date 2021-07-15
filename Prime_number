@@ -29,7 +29,7 @@ class Primenumber
     }  
    static int Twinprime(int n1,int n2)  
     {  
-     if(Prime(n1) && Prime(n2) && Math.abs(n1-n2)==2)  
+     if(Prime(n1)==0 && Prime(n2)==0 && Math.abs(n1-n2)==2)  
         return 0;  
      else  
         return 1;  
@@ -53,9 +53,11 @@ class Primenumber
 }
 *********************************OUTPUT************************
 D:\ali>javac Primenumber.java
-Primenumber.java:32: error: bad operand types for binary operator '&&'
-     if(Prime(n1) && Prime(n2) && Math.abs(n1-n2)==2)
-                  ^
-  first type:  int
-  second type: int
-1 error
+D:\ali>java Primenumber
+Enter start value
+3
+Enter last value
+13
+3,5
+5,7
+11,13
