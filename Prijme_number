@@ -1,0 +1,61 @@
+import java.io.*;
+import java.util.*;    
+class Primenumber
+ {  
+  static int Prime(int n)  
+    {  
+     int i;  
+     int flag = 0;              
+     if(n==0||n==1)
+     {    
+      return 1;        
+      }
+      else
+      {    
+       for(i=2;i<=n/2;i++)
+       {        
+        if(n%i==0)
+        {        
+         flag=1;        
+         return 1;       
+        }        
+       }        
+      if(flag==0)    
+      {   
+       return 0;  
+      }    
+     }  
+        return 0;  
+    }  
+   static int Twinprime(int n1,int n2)  
+    {  
+     if(Prime(n1) && Prime(n2) && Math.abs(n1-n2)==2)  
+        return 0;  
+     else  
+        return 1;  
+    }    
+    public static void main(String[] args)  
+    {  
+     int start,end;   
+     Scanner sc=new Scanner(System.in);  
+     System.out.println("Enter start value");  
+     start=sc.nextInt();  
+     System.out.println("Enter last value");  
+     end=sc.nextInt();  
+     for(int i=start;i<end;i++)
+     {  
+      if (Twinprime(i,(i + 2))==0)
+      {  
+       System.out.printf("%d%d",i,i+2);  
+      }  
+     }  
+    }  
+}
+*********************************OUTPUT************************
+D:\ali>javac Primenumber.java
+Primenumber.java:32: error: bad operand types for binary operator '&&'
+     if(Prime(n1) && Prime(n2) && Math.abs(n1-n2)==2)
+                  ^
+  first type:  int
+  second type: int
+1 error
