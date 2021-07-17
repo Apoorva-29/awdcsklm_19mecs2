@@ -1,0 +1,32 @@
+import java.util.*;
+public class Arraylistupdate
+{
+ public static void main(String args[])
+ {
+  ArrayList<Integer> a =new ArrayList<Integer>();
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  for(int i=0;i<n;i++)
+  { 
+   a.add(sc.nextInt());
+  }
+  int value=sc.nextInt();
+  int update=sc.nextInt();
+  for(int j=0;j<n;j++)
+  {
+   if(a.get(j)==value)
+    {
+      a.set(j,update);
+    }
+  }
+ System.out.print(a);
+}
+}
+****************************OUUTPUT************************
+D:\ali>javac Arraylistupdate.java
+D:\ali>java Arraylistupdate
+5
+10 20 30 40 50
+20
+99
+[10, 99, 30, 40, 50]
