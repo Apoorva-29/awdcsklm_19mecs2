@@ -1,0 +1,129 @@
+import java.util.*;
+public class Menu
+{
+ public static void main(String args[])
+ {
+  int m;
+  Scanner sc=new Scanner(System.in);
+  ArrayList<Integer> a =new ArrayList<Integer>();
+  m=sc.nextInt();
+  {
+   for(int i=0;i<m;i++)
+   {
+    System.out.println("1.BeginInsert");
+    System.out.println("2.EndInsert");
+    System.out.println("3.Position Insert");
+    System.out.println("4.Beginning Delete");
+    System.out.println("5.End Delete");
+    System.out.println("6.Position Delete");
+    System.out.println("7.Display");
+    System.out.println("8.Exit");
+    System.out.println("enter your choice");
+    int ch=sc.nextInt();
+    if(ch!=7 && ch!=8)
+    System.out.println("enter n value");
+    int n=sc.nextInt();
+    switch(ch)
+    {
+     case 1:
+            a.add(n);
+            break;
+     case 2:
+            a.add((a.size())-1,n);
+            break;
+     case 3:
+            System.out.println("enter position");
+            int j=sc.nextInt();
+            a.add(j,n);
+            break;
+     case 4:
+            a.remove(0);
+            break;
+     case 5:
+            a.remove((a.size())-1); 
+            break;
+     case 6:
+            System.out.println("enter position");
+            int k=sc.nextInt();
+            a.remove(k);
+            break;
+     case 7:
+           for(int l=0;l<a.size();l++)
+           {
+           System.out.print(a.get(l)+" ");
+           }  
+           System.out.println();
+           break;
+     case 8:
+            System.out.println("Exit");
+            break;
+    }
+   }
+  }
+ }
+}  
+******************************OUTPUT****************************
+D:\ali>javac Menu.java
+
+D:\ali>java Menu
+5
+1.BeginInsert
+2.EndInsert
+3.Position Insert
+4.Beginning Delete
+5.End Delete
+6.Position Delete
+7.Display
+8.Exit
+enter your choice
+1
+enter n value
+10
+1.BeginInsert
+2.EndInsert
+3.Position Insert
+4.Beginning Delete
+5.End Delete
+6.Position Delete
+7.Display
+8.Exit
+enter your choice
+2
+enter n value
+20
+1.BeginInsert
+2.EndInsert
+3.Position Insert
+4.Beginning Delete
+5.End Delete
+6.Position Delete
+7.Display
+8.Exit
+enter your choice
+3
+enter n value
+30
+enter position
+1
+1.BeginInsert
+2.EndInsert
+3.Position Insert
+4.Beginning Delete
+5.End Delete
+6.Position Delete
+7.Display
+8.Exit
+enter your choice
+7
+20 30 10
+1.BeginInsert
+2.EndInsert
+3.Position Insert
+4.Beginning Delete
+5.End Delete
+6.Position Delete
+7.Display
+8.Exit
+enter your choice
+8
+Exit
