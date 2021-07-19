@@ -1,0 +1,32 @@
+import java.util.*;
+public class Hashmap
+{
+ public static void main(String args[])
+ {
+  Scanner sc=new Scanner(System.in);
+  int n,key;
+  String value;
+  HashMap<Integer,String> x=new HashMap<Integer,String>();
+  System.out.println("enter the n value");
+  n=sc.nextInt();
+  for (Integer i=0;i<n;i++)
+  {
+   key=sc.nextInt();
+   value=sc.next();
+   x.put(key,value);
+  }
+  TreeMap<Integer,String> t=new TreeMap<Integer,String>(x);
+  System.out.println(t);
+  }
+}
+****************************OUTPUT**************************
+D:\ali>javac Hashmap.java
+D:\ali>java Hashmap
+enter the n value
+5
+5 john
+1 sam
+7 kim
+8 nani
+0 chitti
+{0=chitti, 1=sam, 5=john, 7=kim, 8=nani}
