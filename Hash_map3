@@ -1,0 +1,47 @@
+import java.util.*;
+class Hashmap3
+{
+ public static void main(String args[])
+ {
+  HashMap<String,Integer> x=new HashMap<String,Integer>();
+  int n;
+  Scanner sc=new Scanner(System.in);
+  n=sc.nextInt();
+  String arr[] =new String[n];
+  for(int i=0;i<n;i++)
+  {
+   arr[i]=sc.next();
+  }
+  for(int j=0;j<arr.length;j++)
+  {
+   String key;
+   key=arr[j];
+   if(x.containsKey(key))
+   x.put(key,x.get(key)+1);
+   else
+   x.put(key,1);
+  }
+   for(Map.Entry<String,Integer> entry:x.entrySet())
+ {
+  if(entry.getValue()>2) 
+{
+ System.out.println(entry.getKey()+"-->"+entry.getValue());
+ }
+}
+}
+}
+*******************************OUTPUT******************************
+D:\ali>javac Hashmap3.java
+D:\ali>java Hashmap3
+9
+rama
+gita
+rama
+lakshmi
+rama
+gita
+lakshmi
+sita
+lakshmi
+rama-->3
+lakshmi-->3
